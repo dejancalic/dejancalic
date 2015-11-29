@@ -1,1 +1,168 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+    <link href="ss/hover.css" rel="stylesheet" media="all">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="ss/demo-page.css" rel="stylesheet" media="all">
+
+    
+  </head>
+  
+  
+  <body>
+
+
+  <div class="navbar-fixed-top  ">
+  <div class="navbar-header navbar-inverse ">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="#">CREATIVE <span style="color:orange; font-size:21px;">SOLUTION</span><br><small style="margin:-5px 0px 0px 150px; position:absolute;"> web design</small></a>
+    </div>
+     <div class="collapse navbar-collapse navbar-inverse  " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right right">
+        
+        <li class="active">
+          <a href="#">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li>
+          <a href="#">PORTFOLIO</a>
+        </li>
+
+        <li>
+          <a href="#">CV</a>
+        </li>
+
+        <li>
+          <a href="#">CONTACT</a>
+        </li>
+
+      </ul>
+   </div>
+</div>
+
+
+  <div class="container-fluid first">
+    <div class="bg"></div>
+    <div class="row">
+     
+      <div class="col-lg-12  col-xs-12 hed1">
+        <h1>WEB DESIGN</h1>
+        <p>Front end developer</p>
+        <h4 style="font-size:22px;"><span style="color:orange; font-size:28px; font-family: 'Open Sans Condensed', sans-serif;">Website</span> is a mirror of your company.<br>
+            Make your <span style="color:orange; font-size:28px; font-family: 'Open Sans Condensed', sans-serif;">ideas</span> into reality.<br>
+            your website<span style="color:orange; font-size:28px; font-family: 'Open Sans Condensed', sans-serif;"> is my concern.</span>
+        </h4>
+      </div>
+   
+    </div>
+  </div>  
+
+  <div class="container-fluid seccond">
+      <div class="row center">
+        <div class="col-lg-2 col-md-4 col-xs-12 skill"><h1 class="hvr-pulse">HTML</h1><p>my skills 100%</p></div>
+        <div class="col-lg-2 col-md-4 col-xs-12 skill"><h1>CSS</h1><p>my skills 100%</p></div>
+        <div class="col-lg-2 col-md-4 col-xs-12 skill"><h1>jQuery</h1><p>my skills 50%</p></div>
+        <div class="col-lg-2 col-md-4 col-xs-12 skill"><h1>JS</h1><p>my skills 50%</p></div>
+        <div class="col-lg-2 col-md-4 col-xs-12 skill"><h1>Bootstrap</h1><p>my skills 80%</p></div>
+        <div class="col-lg-2 col-md-4 col-xs-12 skill"><h1>Wordpress</h1><p>my skills 50%</p></div>
+      </div>
+
+    <div class="row portfolio">
+      <h1 class="center">PORTFOLIO</h1>
+     
+      <div class="panel-group col-lg-6 col-lg-offset-3" id="accordion" role="tablist" aria-multiselectable="true">
+           
+            <div class="panel ">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      
+                        LOGO
+                    </h4>
+                </div>
+              </a>
+                   
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        
+                    </div>
+                  </div>
+             </div>
+        </div>
+      
+            <div class="panel ">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">WEBSITES</h4>
+                </di  v>
+           </a>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat 
+          </div>
+        </div>
+      </div>
+      </div> 
+  </div>
+
+  <div class="conteiner-default cont3 ">
+    <div class="row">
+      sad
+    </div>
+    
+  </div>
+    <script>
+    var hed1 = document.querySelector('.hed1')
+var menuPosition = hed1.getBoundingClientRect().top;
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset >= menuPosition) {
+        hed1.style.position = 'fixed';
+        hed1.style.top = '-85px';
+        hed1.style.height = '90px';
+        hed1.style.overflow = 'hidden'; 
+
+    } else {
+        hed1.style.position = 'static';
+        hed1.style.top = '75px';
+        hed1.style.left = '0px';
+        hed1.style.height = 'auto';
+       
+
+    }
+});
+
+
+    </script>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+
+
+
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  
+
+  </body>
+</html>
